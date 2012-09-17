@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBB88C3E1607E87100808669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB88C3D1607E87100808669 /* UIKit.framework */; };
+		CBB88C401607E87100808669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB88C3F1607E87100808669 /* Foundation.framework */; };
+		CBB88C421607E87100808669 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB88C411607E87100808669 /* CoreGraphics.framework */; };
+		CBB88C481607E87100808669 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBB88C461607E87100808669 /* InfoPlist.strings */; };
+		CBB88C4A1607E87100808669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C491607E87100808669 /* main.m */; };
+		CBB88C4E1607E87100808669 /* SLURankOrderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C4D1607E87100808669 /* SLURankOrderAppDelegate.m */; };
+		CBB88C511607E87100808669 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB88C4F1607E87100808669 /* MainStoryboard.storyboard */; };
+		CBB88C541607E87100808669 /* SLURankOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C531607E87100808669 /* SLURankOrderViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CBB88C391607E87100808669 /* SLU Rank Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SLU Rank Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB88C3D1607E87100808669 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CBB88C3F1607E87100808669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBB88C411607E87100808669 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CBB88C451607E87100808669 /* SLU Rank Order-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLU Rank Order-Info.plist"; sourceTree = "<group>"; };
+		CBB88C471607E87100808669 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBB88C491607E87100808669 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBB88C4B1607E87100808669 /* SLU Rank Order-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLU Rank Order-Prefix.pch"; sourceTree = "<group>"; };
+		CBB88C4C1607E87100808669 /* SLURankOrderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLURankOrderAppDelegate.h; sourceTree = "<group>"; };
+		CBB88C4D1607E87100808669 /* SLURankOrderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderAppDelegate.m; sourceTree = "<group>"; };
+		CBB88C501607E87100808669 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CBB88C521607E87100808669 /* SLURankOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLURankOrderViewController.h; sourceTree = "<group>"; };
+		CBB88C531607E87100808669 /* SLURankOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBB88C361607E87100808669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB88C3E1607E87100808669 /* UIKit.framework in Frameworks */,
+				CBB88C401607E87100808669 /* Foundation.framework in Frameworks */,
+				CBB88C421607E87100808669 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBB88C2E1607E87100808669 = {
+			isa = PBXGroup;
+			children = (
+				CBB88C431607E87100808669 /* SLU Rank Order */,
+				CBB88C3C1607E87100808669 /* Frameworks */,
+				CBB88C3A1607E87100808669 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBB88C3A1607E87100808669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB88C391607E87100808669 /* SLU Rank Order.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBB88C3C1607E87100808669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBB88C3D1607E87100808669 /* UIKit.framework */,
+				CBB88C3F1607E87100808669 /* Foundation.framework */,
+				CBB88C411607E87100808669 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB88C431607E87100808669 /* SLU Rank Order */ = {
+			isa = PBXGroup;
+			children = (
+				CBB88C4C1607E87100808669 /* SLURankOrderAppDelegate.h */,
+				CBB88C4D1607E87100808669 /* SLURankOrderAppDelegate.m */,
+				CBB88C4F1607E87100808669 /* MainStoryboard.storyboard */,
+				CBB88C521607E87100808669 /* SLURankOrderViewController.h */,
+				CBB88C531607E87100808669 /* SLURankOrderViewController.m */,
+				CBB88C441607E87100808669 /* Supporting Files */,
+			);
+			path = "SLU Rank Order";
+			sourceTree = "<group>";
+		};
+		CBB88C441607E87100808669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBB88C451607E87100808669 /* SLU Rank Order-Info.plist */,
+				CBB88C461607E87100808669 /* InfoPlist.strings */,
+				CBB88C491607E87100808669 /* main.m */,
+				CBB88C4B1607E87100808669 /* SLU Rank Order-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBB88C381607E87100808669 /* SLU Rank Order */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB88C571607E87100808669 /* Build configuration list for PBXNativeTarget "SLU Rank Order" */;
+			buildPhases = (
+				CBB88C351607E87100808669 /* Sources */,
+				CBB88C361607E87100808669 /* Frameworks */,
+				CBB88C371607E87100808669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SLU Rank Order";
+			productName = "SLU Rank Order";
+			productReference = CBB88C391607E87100808669 /* SLU Rank Order.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBB88C301607E87100808669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SLURankOrder;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = drawkward;
+			};
+			buildConfigurationList = CBB88C331607E87100808669 /* Build configuration list for PBXProject "SLU Rank Order" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBB88C2E1607E87100808669;
+			productRefGroup = CBB88C3A1607E87100808669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB88C381607E87100808669 /* SLU Rank Order */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBB88C371607E87100808669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB88C481607E87100808669 /* InfoPlist.strings in Resources */,
+				CBB88C511607E87100808669 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBB88C351607E87100808669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB88C4A1607E87100808669 /* main.m in Sources */,
+				CBB88C4E1607E87100808669 /* SLURankOrderAppDelegate.m in Sources */,
+				CBB88C541607E87100808669 /* SLURankOrderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBB88C461607E87100808669 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB88C471607E87100808669 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CBB88C4F1607E87100808669 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB88C501607E87100808669 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBB88C551607E87100808669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBB88C561607E87100808669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB88C581607E87100808669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLU Rank Order/SLU Rank Order-Prefix.pch";
+				INFOPLIST_FILE = "SLU Rank Order/SLU Rank Order-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CBB88C591607E87100808669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLU Rank Order/SLU Rank Order-Prefix.pch";
+				INFOPLIST_FILE = "SLU Rank Order/SLU Rank Order-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBB88C331607E87100808669 /* Build configuration list for PBXProject "SLU Rank Order" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB88C551607E87100808669 /* Debug */,
+				CBB88C561607E87100808669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB88C571607E87100808669 /* Build configuration list for PBXNativeTarget "SLU Rank Order" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB88C581607E87100808669 /* Debug */,
+				CBB88C591607E87100808669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBB88C301607E87100808669 /* Project object */;
+}
