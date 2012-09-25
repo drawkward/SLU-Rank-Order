@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB59DB5F160F96F600ADB8B6 /* rank_order_info_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB59DB5E160F96F600ADB8B6 /* rank_order_info_bg.jpg */; };
+		CB59DB62160F996000ADB8B6 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB59DB61160F996000ADB8B6 /* InfoViewController.m */; };
+		CB59DB64160F9BB300ADB8B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59DB63160F9BB300ADB8B6 /* Default@2x.png */; };
+		CB59DB66160F9BB900ADB8B6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB59DB65160F9BB900ADB8B6 /* Default.png */; };
+		CB6EDDF01612432E00E54C71 /* rank_order_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB6EDDEF1612432E00E54C71 /* rank_order_icon.png */; };
+		CB6EDDF31612434600E54C71 /* rank_order_retina_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB6EDDF21612434600E54C71 /* rank_order_retina_icon.png */; };
+		CBABD12116090D8C0025E0AE /* SLURankOrderNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABD12016090D8C0025E0AE /* SLURankOrderNavigationController.m */; };
 		CBB88C3E1607E87100808669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB88C3D1607E87100808669 /* UIKit.framework */; };
 		CBB88C401607E87100808669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB88C3F1607E87100808669 /* Foundation.framework */; };
 		CBB88C421607E87100808669 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB88C411607E87100808669 /* CoreGraphics.framework */; };
@@ -14,10 +21,26 @@
 		CBB88C4A1607E87100808669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C491607E87100808669 /* main.m */; };
 		CBB88C4E1607E87100808669 /* SLURankOrderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C4D1607E87100808669 /* SLURankOrderAppDelegate.m */; };
 		CBB88C511607E87100808669 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB88C4F1607E87100808669 /* MainStoryboard.storyboard */; };
-		CBB88C541607E87100808669 /* SLURankOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C531607E87100808669 /* SLURankOrderViewController.m */; };
+		CBB88C5C1607E8A200808669 /* SLURankOrderMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C5B1607E8A200808669 /* SLURankOrderMainViewController.m */; };
+		CBB88C5F1607E99600808669 /* SoloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C5E1607E99600808669 /* SoloViewController.m */; };
+		CBB88C621607E9A100808669 /* PairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C611607E9A100808669 /* PairViewController.m */; };
+		CBB88C651607E9AA00808669 /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C641607E9AA00808669 /* GroupViewController.m */; };
+		CBB88C681607E9B700808669 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB88C671607E9B700808669 /* ScoreViewController.m */; };
+		CBD3E71D160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBD3E71A160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg */; };
+		CBD3E71E160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBD3E71B160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg */; };
+		CBD3E722160E09B8000A0F53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD3E721160E09B8000A0F53 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB59DB5E160F96F600ADB8B6 /* rank_order_info_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rank_order_info_bg.jpg; sourceTree = "<group>"; };
+		CB59DB60160F996000ADB8B6 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		CB59DB61160F996000ADB8B6 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		CB59DB63160F9BB300ADB8B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		CB59DB65160F9BB900ADB8B6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		CB6EDDEF1612432E00E54C71 /* rank_order_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rank_order_icon.png; path = ../rank_order_icon.png; sourceTree = "<group>"; };
+		CB6EDDF21612434600E54C71 /* rank_order_retina_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rank_order_retina_icon.png; path = ../rank_order_retina_icon.png; sourceTree = "<group>"; };
+		CBABD11F16090D8C0025E0AE /* SLURankOrderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLURankOrderNavigationController.h; sourceTree = "<group>"; };
+		CBABD12016090D8C0025E0AE /* SLURankOrderNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderNavigationController.m; sourceTree = "<group>"; };
 		CBB88C391607E87100808669 /* SLU Rank Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SLU Rank Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB88C3D1607E87100808669 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CBB88C3F1607E87100808669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -29,8 +52,19 @@
 		CBB88C4C1607E87100808669 /* SLURankOrderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLURankOrderAppDelegate.h; sourceTree = "<group>"; };
 		CBB88C4D1607E87100808669 /* SLURankOrderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderAppDelegate.m; sourceTree = "<group>"; };
 		CBB88C501607E87100808669 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CBB88C521607E87100808669 /* SLURankOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLURankOrderViewController.h; sourceTree = "<group>"; };
-		CBB88C531607E87100808669 /* SLURankOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderViewController.m; sourceTree = "<group>"; };
+		CBB88C5A1607E8A200808669 /* SLURankOrderMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLURankOrderMainViewController.h; sourceTree = "<group>"; };
+		CBB88C5B1607E8A200808669 /* SLURankOrderMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderMainViewController.m; sourceTree = "<group>"; };
+		CBB88C5D1607E99600808669 /* SoloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoloViewController.h; sourceTree = "<group>"; };
+		CBB88C5E1607E99600808669 /* SoloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoloViewController.m; sourceTree = "<group>"; };
+		CBB88C601607E9A100808669 /* PairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairViewController.h; sourceTree = "<group>"; };
+		CBB88C611607E9A100808669 /* PairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairViewController.m; sourceTree = "<group>"; };
+		CBB88C631607E9AA00808669 /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		CBB88C641607E9AA00808669 /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		CBB88C661607E9B700808669 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		CBB88C671607E9B700808669 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		CBD3E71A160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ro_score_bg_iphone4_edited.jpg; sourceTree = "<group>"; };
+		CBD3E71B160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ro_bg_iphone4_edited.jpg; sourceTree = "<group>"; };
+		CBD3E721160E09B8000A0F53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +114,20 @@
 				CBB88C4C1607E87100808669 /* SLURankOrderAppDelegate.h */,
 				CBB88C4D1607E87100808669 /* SLURankOrderAppDelegate.m */,
 				CBB88C4F1607E87100808669 /* MainStoryboard.storyboard */,
-				CBB88C521607E87100808669 /* SLURankOrderViewController.h */,
-				CBB88C531607E87100808669 /* SLURankOrderViewController.m */,
+				CB59DB60160F996000ADB8B6 /* InfoViewController.h */,
+				CB59DB61160F996000ADB8B6 /* InfoViewController.m */,
+				CBABD11F16090D8C0025E0AE /* SLURankOrderNavigationController.h */,
+				CBABD12016090D8C0025E0AE /* SLURankOrderNavigationController.m */,
+				CBB88C5A1607E8A200808669 /* SLURankOrderMainViewController.h */,
+				CBB88C5B1607E8A200808669 /* SLURankOrderMainViewController.m */,
+				CBB88C5D1607E99600808669 /* SoloViewController.h */,
+				CBB88C5E1607E99600808669 /* SoloViewController.m */,
+				CBB88C601607E9A100808669 /* PairViewController.h */,
+				CBB88C611607E9A100808669 /* PairViewController.m */,
+				CBB88C631607E9AA00808669 /* GroupViewController.h */,
+				CBB88C641607E9AA00808669 /* GroupViewController.m */,
+				CBB88C661607E9B700808669 /* ScoreViewController.h */,
+				CBB88C671607E9B700808669 /* ScoreViewController.m */,
 				CBB88C441607E87100808669 /* Supporting Files */,
 			);
 			path = "SLU Rank Order";
@@ -90,10 +136,18 @@
 		CBB88C441607E87100808669 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB59DB65160F9BB900ADB8B6 /* Default.png */,
+				CB59DB63160F9BB300ADB8B6 /* Default@2x.png */,
+				CBD3E721160E09B8000A0F53 /* Default-568h@2x.png */,
+				CB6EDDF21612434600E54C71 /* rank_order_retina_icon.png */,
+				CB6EDDEF1612432E00E54C71 /* rank_order_icon.png */,
+				CBD3E71A160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg */,
+				CBD3E71B160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg */,
 				CBB88C451607E87100808669 /* SLU Rank Order-Info.plist */,
 				CBB88C461607E87100808669 /* InfoPlist.strings */,
 				CBB88C491607E87100808669 /* main.m */,
 				CBB88C4B1607E87100808669 /* SLU Rank Order-Prefix.pch */,
+				CB59DB5E160F96F600ADB8B6 /* rank_order_info_bg.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +206,14 @@
 			files = (
 				CBB88C481607E87100808669 /* InfoPlist.strings in Resources */,
 				CBB88C511607E87100808669 /* MainStoryboard.storyboard in Resources */,
+				CBD3E71D160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg in Resources */,
+				CBD3E71E160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg in Resources */,
+				CBD3E722160E09B8000A0F53 /* Default-568h@2x.png in Resources */,
+				CB59DB5F160F96F600ADB8B6 /* rank_order_info_bg.jpg in Resources */,
+				CB59DB64160F9BB300ADB8B6 /* Default@2x.png in Resources */,
+				CB59DB66160F9BB900ADB8B6 /* Default.png in Resources */,
+				CB6EDDF01612432E00E54C71 /* rank_order_icon.png in Resources */,
+				CB6EDDF31612434600E54C71 /* rank_order_retina_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +226,13 @@
 			files = (
 				CBB88C4A1607E87100808669 /* main.m in Sources */,
 				CBB88C4E1607E87100808669 /* SLURankOrderAppDelegate.m in Sources */,
-				CBB88C541607E87100808669 /* SLURankOrderViewController.m in Sources */,
+				CBB88C5C1607E8A200808669 /* SLURankOrderMainViewController.m in Sources */,
+				CBB88C5F1607E99600808669 /* SoloViewController.m in Sources */,
+				CBB88C621607E9A100808669 /* PairViewController.m in Sources */,
+				CBB88C651607E9AA00808669 /* GroupViewController.m in Sources */,
+				CBB88C681607E9B700808669 /* ScoreViewController.m in Sources */,
+				CBABD12116090D8C0025E0AE /* SLURankOrderNavigationController.m in Sources */,
+				CB59DB62160F996000ADB8B6 /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +348,7 @@
 				CBB88C591607E87100808669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

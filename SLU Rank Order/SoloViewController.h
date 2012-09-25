@@ -1,5 +1,5 @@
 //
-//  SLURankOrderAppDelegate.h
+//  SoloViewController.h
 //  SLU Rank Order
 //
 //  Created by RYAN MCNEELY on 9/17/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SLURankOrderAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface SoloViewController : UITableViewController
 
 @end
