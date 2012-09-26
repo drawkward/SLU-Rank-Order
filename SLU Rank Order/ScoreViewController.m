@@ -56,6 +56,12 @@
     return self;
 }
 
+//return to root view controller
+- (IBAction)homePressed:(UIBarButtonItem *)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
 //receives the three re-ordered arrays from the previous view controller.
 - (void)setDetailItem:(NSMutableArray *)newDetailItem{
     

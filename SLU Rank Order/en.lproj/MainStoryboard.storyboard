@@ -164,7 +164,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="∆" id="pDn-yg-n9N"/>
+                    <navigationItem key="navigationItem" title="∆" id="pDn-yg-n9N">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="JyV-SK-TFV">
+                            <connections>
+                                <action selector="homePressed:" destination="6BA-pQ-S5Y" id="kUg-su-DhE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="groupScoreLabel" destination="Gcc-qV-iOK" id="sSL-4R-ldl"/>
                         <outlet property="pairScoreLabel" destination="Llo-Bd-T3Y" id="nkc-zN-5Bl"/>
@@ -347,6 +353,50 @@
         <image name="ro_bg_iphone4_edited.jpg" width="640" height="960"/>
         <image name="ro_score_bg_iphone4_edited.jpg" width="640" height="960"/>
     </resources>
+    <classes>
+        <class className="GroupViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="InfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="instructions" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="PairViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PairViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="SLURankOrderMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SLURankOrderMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="beginButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="SLURankOrderNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SLURankOrderNavigationController.h"/>
+        </class>
+        <class className="ScoreViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="groupScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pairScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="soloScoreLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SoloViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoloViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
