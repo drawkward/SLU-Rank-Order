@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Wxp-ks-NYN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Wxp-ks-NYN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Rank Order Main View Controller - Rank Order-->
@@ -90,7 +90,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rx2-tF-ArN">
                                 <rect key="frame" x="20" y="20" width="280" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Begin by pressing "go", then simply touch a list item to begin rearranging.  Re-order the list items until you feel you've ranked them correctly, then press "Commit" to save your list.  Find a partner and try to rank the same items again.  Next, form a group of four people and rank the same items again together.  Your scores will be displayed in the final view, zero being a perfect score, and twenty being the absolute worst.</string>
+                                <string key="text">Press "go" to begin. Then, touch an item to rearrange.  Press "Commit" after reordering the list.  Find a partner and rank the items again. Next, rank the same items again in a group.  Your individual, pair, and group scores will be displayed in the final view. Note: zero is a perfect score.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -208,8 +208,19 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="LAb-ZF-BkS">
+                            <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="Update" id="pv6-WV-kWx">
+                                    <connections>
+                                        <action selector="updatePressed:" destination="ows-Dc-2i7" id="pJK-YA-DVq"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="BRc-82-zta" style="IBUITableViewCellStyleDefault" id="5ql-Q0-1tl">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="BRc-82-zta" detailTextLabel="xDh-y1-SXX" style="IBUITableViewCellStyleSubtitle" id="5ql-Q0-1tl">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -217,10 +228,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BRc-82-zta">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xDh-y1-SXX">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -257,8 +275,24 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="MTu-li-aeg">
+                            <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="Compare" id="mIo-Gl-QZ1">
+                                    <connections>
+                                        <action selector="comparePressed:" destination="bCK-cg-l2O" id="IXc-tp-5sO"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem title="Update" id="E9S-Vv-S7Y">
+                                    <connections>
+                                        <action selector="updatePressed:" destination="bCK-cg-l2O" id="kkL-jv-g55"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="s3s-99-noa" style="IBUITableViewCellStyleDefault" id="x4u-zR-xIZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="s3s-99-noa" detailTextLabel="WWM-c4-1Ee" style="IBUITableViewCellStyleSubtitle" id="x4u-zR-xIZ">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -266,10 +300,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s3s-99-noa">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WWM-c4-1Ee">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -292,11 +333,134 @@
                     <connections>
                         <outlet property="commitButton" destination="fj2-QL-Rf3" id="Dd8-8v-Cjz"/>
                         <segue destination="hUd-LS-elQ" kind="push" identifier="ShowGroupView" id="fUm-GJ-VBo"/>
+                        <segue destination="MaT-FQ-VdL" kind="modal" identifier="ShowSoloRecallView" modalTransitionStyle="crossDissolve" id="AMb-wn-8i8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXZ-Xz-RY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="392" y="776"/>
+        </scene>
+        <!--Solo Recall View Controller-->
+        <scene sceneID="Uzu-bx-jA8">
+            <objects>
+                <tableViewController id="MaT-FQ-VdL" customClass="SoloRecallViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ha2-q7-NRG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" opaque="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="drv-AS-CdP">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Solo Ranked List" id="A7e-RB-hmy">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="stop" id="jWE-55-Oyq">
+                                        <connections>
+                                            <action selector="xPressed:" destination="MaT-FQ-VdL" id="Mv7-hd-oRl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="tPd-9Q-PgF" detailTextLabel="5Df-2y-k8D" style="IBUITableViewCellStyleSubtitle" id="9Rl-UH-EyW">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tPd-9Q-PgF">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Df-2y-k8D">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MaT-FQ-VdL" id="WkX-2N-zuv"/>
+                            <outlet property="delegate" destination="MaT-FQ-VdL" id="FIU-Xm-qx0"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="navBarItem" destination="drv-AS-CdP" id="lB2-ua-qHP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90p-go-g6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="1393"/>
+        </scene>
+        <!--Pair Recall View Controller-->
+        <scene sceneID="JxL-gf-hyw">
+            <objects>
+                <tableViewController id="uf4-ua-ek7" customClass="PairRecallViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ecj-00-8zH">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" opaque="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="26D-oY-Vmi">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Pair Ranked List" id="BAG-0y-cEM">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="stop" id="rfK-fc-XuM">
+                                        <connections>
+                                            <action selector="xPressed:" destination="uf4-ua-ek7" id="4OS-jT-qSr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Zfd-2k-PaB" detailTextLabel="hFy-0o-U0O" style="IBUITableViewCellStyleSubtitle" id="hIa-cp-YTb">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zfd-2k-PaB">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hFy-0o-U0O">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uf4-ua-ek7" id="YYB-X6-BZ1"/>
+                            <outlet property="delegate" destination="uf4-ua-ek7" id="ixM-vR-RFn"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="navBarItem" destination="26D-oY-Vmi" id="i5U-GR-OIL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYD-GC-bAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="1393"/>
         </scene>
         <!--Group View Controller - Group-->
         <scene sceneID="bQo-tl-nnj">
@@ -306,8 +470,24 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="mJT-Bn-rAn">
+                            <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="Compare" id="YnN-QY-sdL">
+                                    <connections>
+                                        <action selector="comparePressed:" destination="hUd-LS-elQ" id="kP6-kA-v8b"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem title="Update" id="Sec-c5-Nu4">
+                                    <connections>
+                                        <action selector="updatePressed:" destination="hUd-LS-elQ" id="Rhr-53-3si"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="QzB-AJ-Xic" style="IBUITableViewCellStyleDefault" id="JgP-Qr-XnT">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="QzB-AJ-Xic" detailTextLabel="EYO-Ne-3TP" style="IBUITableViewCellStyleSubtitle" id="JgP-Qr-XnT">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -315,10 +495,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QzB-AJ-Xic">
-                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EYO-Ne-3TP">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
@@ -341,6 +528,7 @@
                     <connections>
                         <outlet property="commitButton" destination="qgV-mF-tOB" id="1G0-8S-8es"/>
                         <segue destination="6BA-pQ-S5Y" kind="push" identifier="ShowScoreView" id="0gO-OO-tkW"/>
+                        <segue destination="uf4-ua-ek7" kind="modal" identifier="ShowPairRecallView" modalTransitionStyle="crossDissolve" id="yNK-RE-MOu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNO-a6-ftb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,25 +545,41 @@
         <class className="GroupViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupViewController.h"/>
             <relationships>
+                <relationship kind="action" name="commitPressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="comparePressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="updatePressed:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
         <class className="InfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
             <relationships>
+                <relationship kind="action" name="okPressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="instructions" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="PairRecallViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PairRecallViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="xPressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBarItem" candidateClass="UINavigationBar"/>
             </relationships>
         </class>
         <class className="PairViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PairViewController.h"/>
             <relationships>
+                <relationship kind="action" name="commitPressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="comparePressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="updatePressed:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
         <class className="SLURankOrderMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SLURankOrderMainViewController.h"/>
             <relationships>
+                <relationship kind="action" name="beginPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="infoPressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="beginButton" candidateClass="UIButton"/>
             </relationships>
         </class>
@@ -385,14 +589,24 @@
         <class className="ScoreViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewController.h"/>
             <relationships>
+                <relationship kind="action" name="homePressed:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="groupScoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pairScoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="soloScoreLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="SoloRecallViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoloRecallViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="xPressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBarItem" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
         <class className="SoloViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SoloViewController.h"/>
             <relationships>
+                <relationship kind="action" name="commitPressed:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="updatePressed:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>

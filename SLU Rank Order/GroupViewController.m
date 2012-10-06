@@ -8,6 +8,7 @@
 
 #import "GroupViewController.h"
 #import "ScoreViewController.h"
+#import "PairRecallViewController.h"
 
 @interface GroupViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *commitButton;
@@ -33,9 +34,24 @@
     return self;
 }
 
+//trigger segue that shows previously ordered Pair list
+- (IBAction)comparePressed:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"ShowPairRecallView" sender:self];
+}
+
+//exit editing, update subtitle to reflect new indices 
+- (IBAction)updatePressed:(UIBarButtonItem *)sender {
+    if (self.editing){
+    [self setEditing:NO animated:YES];
+    [self.tableView setNeedsDisplay];
+    }
+}
+
 //triggers "ShowScoreView" segue and ends editing
 - (IBAction)commitPressed:(UIBarButtonItem *)sender {
+    if (self.editing){
     [self setEditing:NO animated:YES];
+    }
     //append the string "Group" to the array so that it
     //can be identified when It's passed to the next view.
     [_groupItems addObject:@"Group"];
@@ -61,6 +77,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
 
     //initialize the table view with the preset ordering of rankable items
     _groupItems = [[NSMutableArray alloc] initWithObjects:@"Carbon Nanotube", @"Billiard Balls",
@@ -111,6 +128,9 @@
     NSString *cellContent = [_groupItems objectAtIndex:indexPath.row];
     cell.textLabel.text = cellContent;
     cell.textLabel.font = [UIFont fontWithName:@"Hoefler Text" size:18];
+    int itemPosition = [_groupItems indexOfObject:[_groupItems objectAtIndex:indexPath.row]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", itemPosition+1];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"Hoefler Text" size:14];
     cell.showsReorderControl = YES;
     return cell;
 }
@@ -142,6 +162,11 @@
     [detail setDetailItem:_rankedPair];
     [detail setDetailItem:_rankedSolo];
     [detail setDetailItem:_groupItems];
+    }
+    //pass rankedPair array to PairRecallViewController for comparison
+    if ([[segue identifier] isEqualToString:@"ShowPairRecallView"]){
+        PairRecallViewController *detail = [segue destinationViewController];
+        [detail setDetailItem:_rankedPair];
     }
 }
 

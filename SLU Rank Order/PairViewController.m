@@ -8,6 +8,7 @@
 
 #import "PairViewController.h"
 #import "GroupViewController.h"
+#import "SoloRecallViewController.h"
 
 @interface PairViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *commitButton;
@@ -31,9 +32,24 @@
     return self;
 }
 
+//trigger segue to show previously ordered Solo list
+- (IBAction)comparePressed:(UIBarButtonItem *)sender {
+    [self performSegueWithIdentifier:@"ShowSoloRecallView" sender:self];
+}
+
+//exit editing, update subtitle to reflect new indices
+- (IBAction)updatePressed:(UIBarButtonItem *)sender {
+    if (self.editing){
+    [self setEditing:NO animated:YES];
+    [self.tableView setNeedsDisplay];
+    }
+}
+
 //triggers "ShowGroupView" segue
 - (IBAction)commitPressed:(UIBarButtonItem *)sender {
+    if (self.editing){
     [self setEditing:NO animated:YES];
+    }
     //append the string "Pair" to the array so that it
     //can be identified when It's passed to the next view.
     [_pairItems addObject:@"Pair"];
@@ -52,6 +68,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
 
     //initialize the table view with the preset ordering of rankable items
     _pairItems = [[NSMutableArray alloc] initWithObjects:@"Carbon Nanotube", @"Billiard Balls",
@@ -98,6 +115,10 @@
     NSString *cellContent = [_pairItems objectAtIndex:indexPath.row];
     cell.textLabel.text = cellContent;
     cell.textLabel.font = [UIFont fontWithName:@"Hoefler Text" size:18];
+    //subtitle text reflects the listed object's index
+    int itemPosition = [_pairItems indexOfObject:[_pairItems objectAtIndex:indexPath.row]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", itemPosition+1];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"Hoefler Text" size:14];
     cell.showsReorderControl = YES;
     return cell;
 }
@@ -107,7 +128,7 @@
     return NO;
 }
 
-//get rid of ugly "delete" circles when in editing mode
+//get rid of "delete" circles when in editing mode
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewCellEditingStyleNone;
 }
@@ -132,6 +153,12 @@
     GroupViewController *detail = [segue destinationViewController];
     [detail setDetailItem:_pairItems];
     [detail setDetailItem:_rankedSolo];
+    }
+    //pass rankedSolo array to SoloRecallViewController for comparison
+    if ([[segue identifier] isEqualToString:@"ShowSoloRecallView"]){
+        
+        SoloRecallViewController *detail = [segue destinationViewController];
+        [detail setDetailItem:_rankedSolo];
     }
 }
 

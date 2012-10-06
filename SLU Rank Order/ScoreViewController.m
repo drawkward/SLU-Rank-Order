@@ -126,7 +126,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationItem.hidesBackButton = YES;
+
     //initialize the array with the items ordered by radius,
     //from smallest to largest.
     _properlyRankedItems = [[NSMutableArray alloc] initWithObjects:@"Carbon Nanotube", @"Human Hair",

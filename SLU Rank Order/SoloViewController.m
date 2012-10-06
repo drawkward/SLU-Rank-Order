@@ -26,14 +26,23 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
 
+//exit editing, update subtitle to reflect new indices
+- (IBAction)updatePressed:(UIBarButtonItem *)sender {
+    if (self.editing){
+    [self setEditing:NO animated:YES];
+    [self.tableView setNeedsDisplay];
+    }
+}
+
 //triggers "ShowPairView" segue and transfers re-ordered soloItems array to next view.
 - (IBAction)commitPressed:(UIBarButtonItem *)sender {
+    if (self.editing){
     [self setEditing:NO animated:YES];
+    }
     [_soloItems addObject:@"Solo"];
     [self performSegueWithIdentifier:@"ShowPairView" sender:self];
 }
@@ -42,27 +51,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationItem.hidesBackButton = YES;
+
     //populate the soloItems array with out-of-order items to be ranked
     _soloItems = [[NSMutableArray alloc] initWithObjects:@"Carbon Nanotube", @"Billiard Balls",
                   @"Earth", @"Boeing 747 Fuselage", @"Dime (US Coin)", @"CD", @"Chap Stick", @"Orange",
                   @"Human Hair", @"Ice Cream Cone", @"Large Pizza", @"Aluminum Soda Can (12 Oz.)",
                   @"Pencil", @"Frisbee", @"Human Eyeball", @"Largest Crater on Earth", @"Jupiter",
                   @"Leaning Tower of Pisa", @"Single Strand of Spaghetti", @"Keg of Beer", nil];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
 {
     [self setCommitButton:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -94,6 +96,10 @@
     NSString *cellContent = [_soloItems objectAtIndex:indexPath.row];
     cell.textLabel.text = cellContent;
     cell.textLabel.font = [UIFont fontWithName:@"Hoefler Text" size:18];
+    int itemPosition = [_soloItems indexOfObject:[_soloItems objectAtIndex:indexPath.row]];
+    //subtitle text reflects the index of the item
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", itemPosition+1];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"Hoefler Text" size:14];
     cell.showsReorderControl = YES;
     return cell;
 }
@@ -103,12 +109,12 @@
     return NO;
 }
 
-//hide the ugly "delete" circles during editing
+//hide the "delete" circles during editing
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewCellEditingStyleNone;
 }
 
-// Override to support rearranging the table view.
+//support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath{
     
     NSString *itemToMove = [_soloItems objectAtIndex:fromIndexPath.row];
@@ -132,14 +138,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //touching a row begins editing mode
     [self setEditing:YES animated:YES];
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+
 }
 
 @end

@@ -37,6 +37,8 @@
 {
     [super viewDidLoad];
     [self setTitleFont];
+    self.navigationItem.backBarButtonItem.enabled = NO;
+    self.navigationItem.hidesBackButton = YES;
 	// Do any additional setup after loading the view.
 }
 
