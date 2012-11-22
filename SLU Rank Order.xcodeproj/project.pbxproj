@@ -31,6 +31,7 @@
 		CBD3E71D160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBD3E71A160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg */; };
 		CBD3E71E160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBD3E71B160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg */; };
 		CBD3E722160E09B8000A0F53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBD3E721160E09B8000A0F53 /* Default-568h@2x.png */; };
+		CBDD2D2F1621ECE10091F877 /* CorrectRankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD2D2E1621ECE10091F877 /* CorrectRankViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,7 @@
 		CB6EDDF21612434600E54C71 /* rank_order_retina_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rank_order_retina_icon.png; path = ../rank_order_retina_icon.png; sourceTree = "<group>"; };
 		CBABD11F16090D8C0025E0AE /* SLURankOrderNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLURankOrderNavigationController.h; sourceTree = "<group>"; };
 		CBABD12016090D8C0025E0AE /* SLURankOrderNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLURankOrderNavigationController.m; sourceTree = "<group>"; };
-		CBB88C391607E87100808669 /* SLU Rank Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SLU Rank Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB88C391607E87100808669 /* Rank Order.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rank Order.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB88C3D1607E87100808669 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CBB88C3F1607E87100808669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBB88C411607E87100808669 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +72,8 @@
 		CBD3E71A160DFD51000A0F53 /* ro_score_bg_iphone4_edited.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ro_score_bg_iphone4_edited.jpg; sourceTree = "<group>"; };
 		CBD3E71B160DFD51000A0F53 /* ro_bg_iphone4_edited.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ro_bg_iphone4_edited.jpg; sourceTree = "<group>"; };
 		CBD3E721160E09B8000A0F53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		CBDD2D2D1621ECE10091F877 /* CorrectRankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorrectRankViewController.h; sourceTree = "<group>"; };
+		CBDD2D2E1621ECE10091F877 /* CorrectRankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorrectRankViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +102,7 @@
 		CBB88C3A1607E87100808669 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBB88C391607E87100808669 /* SLU Rank Order.app */,
+				CBB88C391607E87100808669 /* Rank Order.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +125,8 @@
 				CBCB217A1620BEBA0045DB9D /* SoloRecallViewController.h */,
 				CBCB217B1620BEBA0045DB9D /* SoloRecallViewController.m */,
 				CBB88C4F1607E87100808669 /* MainStoryboard.storyboard */,
+				CBDD2D2D1621ECE10091F877 /* CorrectRankViewController.h */,
+				CBDD2D2E1621ECE10091F877 /* CorrectRankViewController.m */,
 				CB59DB60160F996000ADB8B6 /* InfoViewController.h */,
 				CB59DB61160F996000ADB8B6 /* InfoViewController.m */,
 				CBABD11F16090D8C0025E0AE /* SLURankOrderNavigationController.h */,
@@ -179,7 +184,7 @@
 			);
 			name = "SLU Rank Order";
 			productName = "SLU Rank Order";
-			productReference = CBB88C391607E87100808669 /* SLU Rank Order.app */;
+			productReference = CBB88C391607E87100808669 /* Rank Order.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -245,6 +250,7 @@
 				CB59DB62160F996000ADB8B6 /* InfoViewController.m in Sources */,
 				CBCB217C1620BEBA0045DB9D /* SoloRecallViewController.m in Sources */,
 				CBCB21801620C17C0045DB9D /* PairRecallViewController.m in Sources */,
+				CBDD2D2F1621ECE10091F877 /* CorrectRankViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +328,14 @@
 		CBB88C581607E87100808669 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ryan Mcneely";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ryan Mcneely";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SLU Rank Order/SLU Rank Order-Prefix.pch";
 				INFOPLIST_FILE = "SLU Rank Order/SLU Rank Order-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rank Order";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -333,10 +343,14 @@
 		CBB88C591607E87100808669 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ryan Mcneely";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ryan Mcneely";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SLU Rank Order/SLU Rank Order-Prefix.pch";
 				INFOPLIST_FILE = "SLU Rank Order/SLU Rank Order-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rank Order";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

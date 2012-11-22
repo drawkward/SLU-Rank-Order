@@ -30,13 +30,14 @@
     return self;
 }
 
-//exit editing, update subtitle to reflect new indices
-- (IBAction)updatePressed:(UIBarButtonItem *)sender {
+//exit editing (removed due to review process)
+/*
+- (IBAction)savePressed:(UIBarButtonItem *)sender {
     if (self.editing){
     [self setEditing:NO animated:YES];
-    [self.tableView setNeedsDisplay];
     }
 }
+ */
 
 //triggers "ShowPairView" segue and transfers re-ordered soloItems array to next view.
 - (IBAction)commitPressed:(UIBarButtonItem *)sender {

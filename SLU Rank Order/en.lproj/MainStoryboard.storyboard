@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Wxp-ks-NYN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Wxp-ks-NYN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Rank Order Main View Controller - Rank Order-->
@@ -9,11 +9,11 @@
             <objects>
                 <viewController id="2" customClass="SLURankOrderMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ro_bg_iphone4_edited.jpg" id="lEM-wj-Yqo">
-                                <rect key="frame" x="0.0" y="-44" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FAc-UN-WJS">
@@ -65,7 +65,7 @@
             <objects>
                 <viewController id="4Nj-wq-rqZ" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VhU-Yk-JDF">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="rank_order_info_bg.jpg" id="SFj-IR-PYw">
@@ -112,60 +112,75 @@
             <objects>
                 <viewController id="6BA-pQ-S5Y" customClass="ScoreViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GU1-wd-GDt">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ro_score_bg_iphone4_edited.jpg" id="nM3-Xd-Khs">
-                                <rect key="frame" x="0.0" y="-50" width="320" height="466"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="466"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" text="Solo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qfP-kU-szv">
-                                <rect key="frame" x="122" y="0.0" width="76" height="60"/>
+                                <rect key="frame" x="122" y="39" width="76" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="p6d-mH-AfK">
-                                <rect key="frame" x="141" y="39" width="39" height="26"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="p6d-mH-AfK">
+                                <rect key="frame" x="141" y="86" width="39" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Llo-Bd-T3Y">
-                                <rect key="frame" x="118" y="107" width="84" height="40"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Llo-Bd-T3Y">
+                                <rect key="frame" x="118" y="158" width="84" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gcc-qV-iOK">
-                                <rect key="frame" x="143" y="182" width="34" height="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gcc-qV-iOK">
+                                <rect key="frame" x="143" y="234" width="34" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" text="Pair" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ovS-Bt-9v9">
-                                <rect key="frame" x="137" y="90" width="47" height="30"/>
+                                <rect key="frame" x="137" y="133" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" text="Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vWw-1w-sGD">
-                                <rect key="frame" x="118" y="161" width="84" height="34"/>
+                                <rect key="frame" x="118" y="206" width="84" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="z0C-3k-4fy">
+                                <rect key="frame" x="20" y="428" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoPressed:" destination="6BA-pQ-S5Y" eventType="touchUpInside" id="5KT-c1-P9L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="∆" id="pDn-yg-n9N">
-                        <barButtonItem key="rightBarButtonItem" title="Home" id="JyV-SK-TFV">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="JyV-SK-TFV">
                             <connections>
                                 <action selector="homePressed:" destination="6BA-pQ-S5Y" id="kUg-su-DhE"/>
                             </connections>
@@ -175,11 +190,73 @@
                         <outlet property="groupScoreLabel" destination="Gcc-qV-iOK" id="sSL-4R-ldl"/>
                         <outlet property="pairScoreLabel" destination="Llo-Bd-T3Y" id="nkc-zN-5Bl"/>
                         <outlet property="soloScoreLabel" destination="p6d-mH-AfK" id="jPN-Vv-eha"/>
+                        <segue destination="eiZ-e5-s0h" kind="modal" identifier="ShowCorrectRankingView" modalTransitionStyle="coverVertical" id="bvp-jB-Dry"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAT-st-7BZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="850" y="104"/>
+        </scene>
+        <!--Correct Rank View Controller-->
+        <scene sceneID="PCb-BA-Tcg">
+            <objects>
+                <tableViewController id="eiZ-e5-s0h" customClass="CorrectRankViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pDQ-N0-S7P">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="Z9V-lI-GxA">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Correct Ranking" id="w4t-uC-sBv">
+                                    <barButtonItem key="rightBarButtonItem" systemItem="stop" id="C3n-Dk-czf">
+                                        <connections>
+                                            <action selector="xPressed:" destination="eiZ-e5-s0h" id="mdf-jw-vTm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="zj5-2U-l3d" detailTextLabel="WHK-D9-UYI" style="IBUITableViewCellStyleSubtitle" id="sni-EL-wbZ">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zj5-2U-l3d">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WHK-D9-UYI">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eiZ-e5-s0h" id="G4E-Fk-Qfr"/>
+                            <outlet property="delegate" destination="eiZ-e5-s0h" id="haz-xl-Fz3"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="navBarItem" destination="Z9V-lI-GxA" id="IyR-GH-0FY"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30a-a6-vtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="104"/>
         </scene>
         <!--Rank Order Navigation Controller-->
         <scene sceneID="kJA-zu-kZK">
@@ -205,16 +282,16 @@
             <objects>
                 <tableViewController id="ows-Dc-2i7" customClass="SoloViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IDU-W8-pxK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="LAb-ZF-BkS">
                             <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
-                                <barButtonItem title="Update" id="pv6-WV-kWx">
+                                <barButtonItem title="Commit" id="pv6-WV-kWx">
                                     <connections>
-                                        <action selector="updatePressed:" destination="ows-Dc-2i7" id="pJK-YA-DVq"/>
+                                        <action selector="commitPressed:" destination="ows-Dc-2i7" id="swb-mT-397"/>
                                     </connections>
                                 </barButtonItem>
                             </items>
@@ -251,15 +328,9 @@
                             <outlet property="delegate" destination="ows-Dc-2i7" id="79Q-yl-cmq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Solo" id="WfO-Qq-DiE">
-                        <barButtonItem key="rightBarButtonItem" title="Commit" id="Cbb-3F-F6f">
-                            <connections>
-                                <action selector="commitPressed:" destination="ows-Dc-2i7" id="ost-re-oJL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Solo" id="WfO-Qq-DiE"/>
                     <connections>
-                        <outlet property="commitButton" destination="Cbb-3F-F6f" id="DoF-Qa-nRL"/>
+                        <outlet property="commitButton" destination="pv6-WV-kWx" id="An0-py-p23"/>
                         <segue destination="bCK-cg-l2O" kind="push" identifier="ShowPairView" id="T8j-X0-e9Q"/>
                     </connections>
                 </tableViewController>
@@ -272,7 +343,7 @@
             <objects>
                 <tableViewController id="bCK-cg-l2O" customClass="PairViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="M1j-44-Cyf">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="MTu-li-aeg">
@@ -284,9 +355,9 @@
                                         <action selector="comparePressed:" destination="bCK-cg-l2O" id="IXc-tp-5sO"/>
                                     </connections>
                                 </barButtonItem>
-                                <barButtonItem title="Update" id="E9S-Vv-S7Y">
+                                <barButtonItem title="Commit" id="E9S-Vv-S7Y">
                                     <connections>
-                                        <action selector="updatePressed:" destination="bCK-cg-l2O" id="kkL-jv-g55"/>
+                                        <action selector="commitPressed:" destination="bCK-cg-l2O" id="pMx-si-mj4"/>
                                     </connections>
                                 </barButtonItem>
                             </items>
@@ -323,15 +394,9 @@
                             <outlet property="delegate" destination="bCK-cg-l2O" id="J3H-A2-ezJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pair" id="bsk-1y-hqh">
-                        <barButtonItem key="rightBarButtonItem" title="Commit" id="fj2-QL-Rf3">
-                            <connections>
-                                <action selector="commitPressed:" destination="bCK-cg-l2O" id="ekf-L2-zuf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Pair" id="bsk-1y-hqh"/>
                     <connections>
-                        <outlet property="commitButton" destination="fj2-QL-Rf3" id="Dd8-8v-Cjz"/>
+                        <outlet property="commitButton" destination="E9S-Vv-S7Y" id="c50-Cf-UDM"/>
                         <segue destination="hUd-LS-elQ" kind="push" identifier="ShowGroupView" id="fUm-GJ-VBo"/>
                         <segue destination="MaT-FQ-VdL" kind="modal" identifier="ShowSoloRecallView" modalTransitionStyle="crossDissolve" id="AMb-wn-8i8"/>
                     </connections>
@@ -345,7 +410,7 @@
             <objects>
                 <tableViewController id="MaT-FQ-VdL" customClass="SoloRecallViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ha2-q7-NRG">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <navigationBar key="tableHeaderView" opaque="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="drv-AS-CdP">
@@ -406,7 +471,7 @@
             <objects>
                 <tableViewController id="uf4-ua-ek7" customClass="PairRecallViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ecj-00-8zH">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <navigationBar key="tableHeaderView" opaque="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="26D-oY-Vmi">
@@ -467,7 +532,7 @@
             <objects>
                 <tableViewController id="hUd-LS-elQ" customClass="GroupViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jQZ-DF-m7J">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.50000000000000011" contentMode="scaleToFill" barStyle="blackTranslucent" id="mJT-Bn-rAn">
@@ -479,9 +544,9 @@
                                         <action selector="comparePressed:" destination="hUd-LS-elQ" id="kP6-kA-v8b"/>
                                     </connections>
                                 </barButtonItem>
-                                <barButtonItem title="Update" id="Sec-c5-Nu4">
+                                <barButtonItem title="Commit" id="Sec-c5-Nu4">
                                     <connections>
-                                        <action selector="updatePressed:" destination="hUd-LS-elQ" id="Rhr-53-3si"/>
+                                        <action selector="commitPressed:" destination="hUd-LS-elQ" id="L0b-bt-ueV"/>
                                     </connections>
                                 </barButtonItem>
                             </items>
@@ -518,15 +583,9 @@
                             <outlet property="delegate" destination="hUd-LS-elQ" id="wlZ-5T-pJs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Group" id="Jsm-0K-oJZ">
-                        <barButtonItem key="rightBarButtonItem" title="Commit" id="qgV-mF-tOB">
-                            <connections>
-                                <action selector="commitPressed:" destination="hUd-LS-elQ" id="xEh-op-ETj"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Group" id="Jsm-0K-oJZ"/>
                     <connections>
-                        <outlet property="commitButton" destination="qgV-mF-tOB" id="1G0-8S-8es"/>
+                        <outlet property="commitButton" destination="Sec-c5-Nu4" id="obE-gf-DGR"/>
                         <segue destination="6BA-pQ-S5Y" kind="push" identifier="ShowScoreView" id="0gO-OO-tkW"/>
                         <segue destination="uf4-ua-ek7" kind="modal" identifier="ShowPairRecallView" modalTransitionStyle="crossDissolve" id="yNK-RE-MOu"/>
                     </connections>
@@ -541,79 +600,9 @@
         <image name="ro_bg_iphone4_edited.jpg" width="640" height="960"/>
         <image name="ro_score_bg_iphone4_edited.jpg" width="640" height="960"/>
     </resources>
-    <classes>
-        <class className="GroupViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GroupViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="commitPressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="comparePressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="updatePressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="InfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="okPressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="instructions" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="okButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="PairRecallViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PairRecallViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="xPressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navBarItem" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="PairViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PairViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="commitPressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="comparePressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="updatePressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="SLURankOrderMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SLURankOrderMainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="beginPressed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="infoPressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="beginButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SLURankOrderNavigationController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SLURankOrderNavigationController.h"/>
-        </class>
-        <class className="ScoreViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScoreViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="homePressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="groupScoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pairScoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="soloScoreLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SoloRecallViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoloRecallViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="xPressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navBarItem" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="SoloViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoloViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="commitPressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="updatePressed:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="commitButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

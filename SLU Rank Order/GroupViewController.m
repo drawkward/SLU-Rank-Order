@@ -39,13 +39,14 @@
     [self performSegueWithIdentifier:@"ShowPairRecallView" sender:self];
 }
 
-//exit editing, update subtitle to reflect new indices 
-- (IBAction)updatePressed:(UIBarButtonItem *)sender {
+//exit editing (removed due to review process)
+/*
+- (IBAction)savePressed:(UIBarButtonItem *)sender {
     if (self.editing){
     [self setEditing:NO animated:YES];
-    [self.tableView setNeedsDisplay];
     }
 }
+*/
 
 //triggers "ShowScoreView" segue and ends editing
 - (IBAction)commitPressed:(UIBarButtonItem *)sender {

@@ -61,6 +61,11 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+//show the correct ranking of the objects
+- (IBAction)infoPressed:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"ShowCorrectRankingView" sender:self];
+}
+
 
 //receives the three re-ordered arrays from the previous view controller.
 - (void)setDetailItem:(NSMutableArray *)newDetailItem{
